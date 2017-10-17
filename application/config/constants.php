@@ -84,6 +84,8 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
+define("PUBLIC_PATH",'http://'.$_SERVER['HTTP_HOST']."/uploads/"); //定义资源的路径
+
 define('IS_POST',strtolower($_SERVER['REQUEST_METHOD']) == 'post');  //定义post方法常量
 define('IS_GET',strtolower($_SERVER['REQUEST_METHOD']) == 'get');  //定义get方法常量
 define('IS_AJAX',isset($_SERVER['HPPT_X_REQUEST_WITH']) && strtolower($_SERVER['HPPT_X_REQUEST_WITH']) == 'xmlhttprequest');  //定义判断是否是ajax请求

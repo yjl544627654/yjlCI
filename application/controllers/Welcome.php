@@ -7,11 +7,11 @@ class Welcome extends MY_Controller {
 	public function index()
 	{
 
-		$this->load->model('Log_model','model');
+		$this->load->model('Log_model','model'); // 加载log表，别名为model
 		$pagesize = 20;
 
 		//分页
-		$this->load->library('pagination'); //加载器
+		$this->load->library('pagination'); //分页加载器
 		$config['base_url'] = site_url('Welcome/index');
 		$config['total_rows'] = $this->model->getrows();
 		$config['per_page'] = $pagesize;

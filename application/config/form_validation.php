@@ -5,27 +5,28 @@
 
 
 $config = array(
-    'signup' => array(
+    'reg' => array(
         array(
-            'field' => 'user',
-            'label' => '用户名',
+            'field' => 'truename',
+            'label' => '姓名',
             'rules' => 'required'
         ),
         array(
-            'field' => 'pwd',
-            'label' => '密码',
+            'field' => 'birthday',
+            'label' => '生日',
             'rules' => 'required'
         ),
-        // array(
-        //     'field' => 'passconf',
-        //     'label' => 'Password Confirmation',
-        //     'rules' => 'required'
-        // ),
         array(
-            'field' => 'email',
-            'label' => '邮箱',
-            'rules' => 'required|valid_emails'
-        )
+            'field' => 'phone',
+            'label' => '手机号',
+            'rules' => 'required'
+        ),
+        array(
+            'field' => 'store_id',
+            'label' => '注册区域门店',
+            'rules' => 'required'
+        ),
+        
     ),
     'email' => array(
         array(

@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => '',
 	'database' => 'yjladmin',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'tp_', //前缀
+	'dbprefix' => 'ci_', //前缀
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
